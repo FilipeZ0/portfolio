@@ -42,6 +42,10 @@ nav {
     gap: 10px;
 }
 
+nav:hover {
+    padding: 12px 20px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -78,8 +82,8 @@ h2 {
 .about {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
 }
 
 #abtcolumn1{
@@ -87,23 +91,21 @@ h2 {
     gap: 20px;
     flex-direction: column;
     height: 100%;
-    align-items: center;
-    
 }
 
 .about p {
-    flex: 1;
     background: white;
     color: black;
-    padding: 32px;
     margin: 0px;
+    padding: 32px;
+    height: 50%;
     width: 100%;
     border-radius: var(--radius);
 }
 
 .avatar {
     height: auto;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .about img {
@@ -120,7 +122,7 @@ h2 {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -130,7 +132,7 @@ h2 {
     color: black;
     border-radius: var(--radius);
     text-align: center;
-    padding: 14px 12px;
+    padding: 14px 3px;
     flex: 1;
 }
 
@@ -138,6 +140,7 @@ h2 {
     margin: 16px 0 0 0;
     display: flex;
     justify-content:space-evenly;
+    flex: 1;
     gap: 10px;
 }
 
@@ -201,6 +204,7 @@ h2 {
 
     .about {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .works {
